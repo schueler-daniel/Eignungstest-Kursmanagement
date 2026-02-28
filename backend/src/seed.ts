@@ -23,14 +23,15 @@ export async function initDummyDaten() {
   const hashedPassword = await bcrypt.hash("passwort123", 10);
 
   await Kunden.insertMany([
-    { name: "Anna Müller",    email: "anna@example.com",   password: hashedPassword, ort: "Berlin",     kurse: [kurse[0]._id, kurse[2]._id, kurse[3]._id] },
-    { name: "Ben Schmidt",    email: "ben@example.com",    password: hashedPassword, ort: "Hamburg",    kurse: [kurse[0]._id, kurse[1]._id] },
-    { name: "Clara Weber",    email: "clara@example.com",  password: hashedPassword, ort: "München",    kurse: [kurse[1]._id, kurse[2]._id, kurse[4]._id] },
-    { name: "David Klein",    email: "david@example.com",  password: hashedPassword, ort: "Köln",       kurse: [kurse[0]._id, kurse[5]._id] },
-    { name: "Eva Braun",      email: "eva@example.com",    password: hashedPassword, ort: "Frankfurt",  kurse: [kurse[2]._id, kurse[4]._id] },
-    { name: "Felix Wagner",   email: "felix@example.com",  password: hashedPassword, ort: "Stuttgart",  kurse: [kurse[3]._id, kurse[6]._id] },
-    { name: "Greta Hoffmann", email: "greta@example.com",  password: hashedPassword, ort: "Düsseldorf", kurse: [kurse[6]._id] },
+    { name: "Anna Mülberg",     email: "anna@example.com",   password: hashedPassword, ort: "Berlin",     kurse: [kurse[0]._id, kurse[2]._id, kurse[3]._id] },
+    { name: "Ben Schmidtke",    email: "ben@example.com",    password: hashedPassword, ort: "Hamburg",    kurse: [kurse[0]._id, kurse[1]._id] },
+    { name: "Clara Weberling",  email: "clara@example.com",  password: hashedPassword, ort: "München",    kurse: [kurse[1]._id, kurse[2]._id, kurse[4]._id] },
+    { name: "David Kleinmann",  email: "david@example.com",  password: hashedPassword, ort: "Köln",       kurse: [kurse[0]._id, kurse[5]._id] },
+    { name: "Eva Brandner",     email: "eva@example.com",    password: hashedPassword, ort: "Frankfurt",  kurse: [kurse[2]._id, kurse[4]._id] },
+    { name: "Felix Wagenbach",  email: "felix@example.com",  password: hashedPassword, ort: "Stuttgart",  kurse: [kurse[3]._id, kurse[6]._id] },
+    { name: "Greta Hoffberg",   email: "greta@example.com",  password: hashedPassword, ort: "Düsseldorf", kurse: [kurse[6]._id] },
   ]);
 
   console.log("Dummy-Daten eingefügt");
+
 }
